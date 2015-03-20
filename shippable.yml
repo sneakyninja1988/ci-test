@@ -4,5 +4,5 @@ script:
  - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
  - sudo docker -d &
  - sleep 10
- - docker info
+ - sudo docker info
  - sudo docker run postgres
