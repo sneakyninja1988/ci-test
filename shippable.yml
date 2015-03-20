@@ -2,6 +2,7 @@ language: java
 script:
  - echo hello
  - curl -sSL https://get.docker.com/ubuntu/ | sudo sh
- - sudo docker -d -H 0.0.0.0:5555
+ - sudo docker -d &
+ - sleep 10
  - docker info
  - sudo docker run postgres
